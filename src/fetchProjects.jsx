@@ -1,8 +1,8 @@
 import { createClient } from "contentful";
 import { useState, useEffect } from "react";
 const client = createClient({
-  space: "3kh097r1muk7",
-  accessToken: "wn7DHx5hacColSEVEO9PifiMSXTd2JARiiixTeNIh_Q",
+  space: import.meta.env.VITE_SPACE_ID,
+  accessToken: import.meta.env.VITE_API_KEY,
   environment: "master",
 });
 
